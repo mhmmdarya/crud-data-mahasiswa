@@ -1,0 +1,13 @@
+{
+    "name": "muhammadarya/app",
+    "description": "Belajar PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Muhammadarya\\App\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
