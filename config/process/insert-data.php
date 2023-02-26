@@ -7,4 +7,4 @@ $alamat = $_POST['alamat'];
 
 DB::tambahData($nama, $alamat);
 
-header("Location: http://localhost:5000/index.php");
+header("Location: http://localhost:5000/");

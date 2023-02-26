@@ -27,7 +27,7 @@ $namaKampus = $config['APP_NAME']; ?>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Data Mahasiswa</a>
+                        <a class="nav-link active" aria-current="page" href="/">Data Mahasiswa</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +50,7 @@ $namaKampus = $config['APP_NAME']; ?>
                         <label for="alamat" class="form-label">Alamat Mahasiswa</label>
                         <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat" required>
                     </div>
+                    <a href="index.php" class="btn btn-danger">Kembali</a>
                     <input type="submit" class="btn btn-success" value="Insert Data">
                 </form>
             </div>

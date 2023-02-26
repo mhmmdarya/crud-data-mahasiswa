@@ -54,6 +54,7 @@ $nama = $data['nama'];
                         <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat" value="<?= $data['alamat'] ?>" required>
                     </div>
                     <input type="hidden" name="id" value="<?= $data['npm'] ?>">
+                    <a href="index.php" class="btn btn-danger">Kembali</a>
                     <input type="submit" class="btn btn-success" value="Update Data">
                 </form>
             </div>

@@ -4,6 +4,7 @@ require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/../config/db.php';
 
 $namaKampus = $config['APP_NAME'];
+$jml = DB::countData();
 $data = $_GET == null ? DB::getData() : DB::cariData($_GET['cari']);
 ?>
 <!DOCTYPE html>
@@ -49,7 +50,8 @@ $data = $_GET == null ? DB::getData() : DB::cariData($_GET['cari']);
         <div class="card mt-3">
             <div class="card-header bg-dark text-white">
                 Data Mahasiswa
-                <a href="tambah-data.php" class="btn btn-primary btn-sm float-end">Tambah Data</a>
+                <span class="btn btn-success float-end btn-sm">Jumlah Data : <?= $jml['count(*)'] ?></span>
+                <a href="/page/tambah-data.php" class="btn btn-primary me-2 btn-sm float-end">Tambah Data</a>
             </div>
             <div class="card-body">
                 <table class="table table-hover">
